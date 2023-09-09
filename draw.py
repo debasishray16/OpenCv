@@ -2,7 +2,6 @@ import cv2 as cv
 import numpy as np
 
 
-
 blank=np.zeros((500,500,3),dtype='uint8')
 cv.imshow('Blank',blank)
 
@@ -18,7 +17,7 @@ blank[200:300,300:400]=0,255,255
 
 
 #2. Draw a rectangle
-#                   coordinates
+#coordinates[row=0,column=0 to row=255,column=255],where (255,255) is the center.
 cv.rectangle(blank,(0,0),(250,250),(0,255,0),thickness=2)
 
 # for full screen 
